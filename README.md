@@ -1,1 +1,1 @@
-# algorithms
+# App Academy Challenges
