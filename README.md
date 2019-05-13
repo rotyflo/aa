@@ -16,11 +16,11 @@
 
 ## Software Engineering Foundations - 61.2 Hours
 - [x] **Introduction** *1:19*
-- [x] **Advanced Ruby** *2:58*
-- [x] **Scope & References** *3:45*
-- [x] **RSpec** *6:43*
-- [x] **Debugging** *4:30*
-- [x] **Blocks & Procs** *4:45*
+- [x] [**Advanced Ruby**](software_engineering_foundations/advanced_ruby/) *2:58*
+- [x] [**Scope & References**](software_engineering_foundations/scope_and_references/) *3:45*
+- [x] [**RSpec**](software_engineering_foundations/rspec/) *6:43*
+- [x] [**Debugging**](software_engineering_foundations/debugging) *4:30*
+- [x] [**Blocks & Procs**](software_engineering_foundations/blocks_and_procs) *4:45*
 - [ ] **Classes** *6:30*
 - [ ] **Class Monkey Patching** *3:10*
 - [ ] **Input/Output** *9:31*
