@@ -20,7 +20,7 @@
 - [x] **Scope & References** *3:45*
 - [x] **RSpec** *6:43*
 - [x] **Debugging** *4:30*
-- [ ] **Blocks & Procs** *4:45*
+- [x] **Blocks & Procs** *4:45*
 - [ ] **Classes** *6:30*
 - [ ] **Class Monkey Patching** *3:10*
 - [ ] **Input/Output** *9:31*
