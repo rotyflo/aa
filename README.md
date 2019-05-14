@@ -21,7 +21,7 @@
 - [x] [**RSpec**](software_engineering_foundations/rspec/) *6:43*
 - [x] [**Debugging**](software_engineering_foundations/debugging) *4:30*
 - [x] [**Blocks & Procs**](software_engineering_foundations/blocks_and_procs/) *4:45*
-- [ ] [**Classes**](software_engineering_foundations/classes/) *6:30*
+- [x] [**Classes**](software_engineering_foundations/classes/) *6:30*
 - [ ] **Class Monkey Patching** *3:10*
 - [ ] **Input/Output** *9:31*
 - [ ] **Object Oriented Programming** *12:47*
