@@ -24,6 +24,6 @@
 - [x] [**Classes**](software_engineering_foundations/classes/) *6:30*
 - [x] [**Class Monkey Patching**](software_engineering_foundations/class_monkey_patching/) *3:10*
 - [x] [**Input/Output**](software_engineering_foundations/input_output/) *9:31*
-- [ ] **Object Oriented Programming** *12:47*
+- [ ] [**Object Oriented Programming**](software_engineering_foundations/object_oriented_programming/) *12:47*
 - [ ] **Recursion** *2:14*
 - [ ] **Foundations Recap** *3:00*
