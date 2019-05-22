@@ -14,9 +14,9 @@ Today we'll be writing a Ruby implementation of everyone's (or maybe just my) fa
 Let's start by writing the logic to play a single round of Ghost (that is, playing until one player spells a word). Write your game for two players only, and don't worry about keeping track of wins/losses (we can get to this later). The basic logic will look something like this:
 
 + Instantiate a new Game object, passing in both of the Players.
-	+ The Game maintains a fragment instance variable, which represents the word as it has been built up by the players.
-	+ The Players take turns adding a letter to the fragment. The Game should ensure that a play is valid before actually changing the fragment.
-	+ The Game checks the fragment against a dictionary; if the fragment is a word contained in the dictionary, then the previous player loses.
+  + The Game maintains a fragment instance variable, which represents the word as it has been built up by the players.
+  + The Players take turns adding a letter to the fragment. The Game should ensure that a play is valid before actually changing the fragment.
+  + The Game checks the fragment against a dictionary; if the fragment is a word contained in the dictionary, then the previous player loses.
 
 ### Game
 
@@ -61,7 +61,7 @@ Refactor your game to work with more than just two players. Instead of ending th
 ## Phase Bonus
 
 + Write an AiPlayer class for your Ghost game. You'll need to figure out the logic for picking a winning letter on each turn. In order to do this, your AiPlayer will need to know both the current fragment and the number of other players (n).
-	+ If adding a letter to the fragment would spell a word, then the letter is a losing move.
-	+ If adding a letter to the fragment would leave only words with n or fewer additional letters as possibilities, then the letter is a winning move.
-	+ Your AI should take any available winning move; if none is available, randomly select a losing move.
-		+ See if you can improve your AI by computing the entire tree of possible moves from the current position. Choose the move that leaves the fewest losers and the most winners in the tree.
+  + If adding a letter to the fragment would spell a word, then the letter is a losing move.
+  + If adding a letter to the fragment would leave only words with n or fewer additional letters as possibilities, then the letter is a winning move.
+  + Your AI should take any available winning move; if none is available, randomly select a losing move.
+    + See if you can improve your AI by computing the entire tree of possible moves from the current position. Choose the move that leaves the fewest losers and the most winners in the tree.

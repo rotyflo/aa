@@ -1,14 +1,14 @@
 
 class Player
-	attr_reader :name
-	attr_accessor :losses
+  attr_reader :name
+  attr_accessor :losses
 
-	def initialize(name)
-		@name = name
-		@losses = 0
-	end
+  def initialize(name)
+    @name = name
+    @losses = 0
+  end
 
-	def guess
-		gets.chomp
-	end
+  def guess
+    gets.chomp
+  end
 end

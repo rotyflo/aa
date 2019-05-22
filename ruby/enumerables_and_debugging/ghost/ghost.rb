@@ -8,8 +8,8 @@ players = []
 player = ""
 
 while player != "DONE"
-	player = gets.chomp.upcase
-	players << player
+  player = gets.chomp.upcase
+  players << player
 end
 
 players.pop
