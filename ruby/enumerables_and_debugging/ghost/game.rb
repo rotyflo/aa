@@ -4,8 +4,8 @@ require_relative "aiplayer"
 
 class Game
 	attr_reader :dictionary,
-				:players,
-				:fragment
+							:players,
+							:fragment
 
 	def initialize(players)
 		@players = players.map { |name| Player.new(name) }
