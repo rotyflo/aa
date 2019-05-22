@@ -33,8 +33,8 @@
 ## Main Course
 
 ### Ruby - 158:17
-- [ ] **Getting Started** *0:10*
-- [ ] **Enumerables and Debugging** *22:00*
+- [x] **Getting Started** *0:10*
+- [x] [**Enumerables and Debugging**](ruby/enumerables_and_debugging/) *22:00*
 - [ ] **Reference** *11:37*
 - [ ] **Recursion** *15:32*
 - [ ] **Git** *17:06*
