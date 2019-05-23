@@ -35,7 +35,7 @@
 ### Ruby - 158:17
 - [x] **Getting Started** *0:10*
 - [x] [**Enumerables and Debugging**](ruby/enumerables_and_debugging/) *22:00*
-- [ ] **Reference** *11:37*
+- [ ] [**Reference**](ruby/reference/) *11:37*
 - [ ] **Recursion** *15:32*
 - [ ] **Git** *17:06*
 - [ ] **Data Structures** *17:25*
