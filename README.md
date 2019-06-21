@@ -1,47 +1,33 @@
-# App Academy Challenges
+# App Academy (48-Weeks)
 
-## Prerequisites
+## Intro to Programming
 
-### Intro to Programming
-- [x] **Introduction**
-- [x] **Numbers**
-- [x] **Booleans**
-- [x] **Strings**
-- [x] **Variables**
-- [x] **Methods**
-- [x] **Conditionals**
-- [x] **Loops**
-- [x] **Arrays**
-- [x] **Array Methods & Enumerables**
-- [x] **Hashes**
-- [x] **Advanced Problems**
+| Week | Course(s) | Status |
+|------|-----------|--------|
+|  1 | Numbers<br>Booleans<br>Strings<br>Variables<br>Methods<br>Conditionals<br>Loops<br>Arrays<br>Array Methods & Enumerables<br>Hashes<br>Advanced Problems | ![](https://img.shields.io/badge/-complete-green.svg) |
 
-### Software Engineering Foundations - 61:12
-- [x] **Introduction** *1:19*
-- [x] [**Advanced Ruby**](software_engineering_foundations/advanced_ruby/) *2:58*
-- [x] [**Scope & References**](software_engineering_foundations/scope_and_references/) *3:45*
-- [x] [**RSpec**](software_engineering_foundations/rspec/) *6:43*
-- [x] [**Debugging**](software_engineering_foundations/debugging) *4:30*
-- [x] [**Blocks & Procs**](software_engineering_foundations/blocks_and_procs/) *4:45*
-- [x] [**Classes**](software_engineering_foundations/classes/) *6:30*
-- [x] [**Class Monkey Patching**](software_engineering_foundations/class_monkey_patching/) *3:10*
-- [x] [**Input/Output**](software_engineering_foundations/input_output/) *9:31*
-- [x] [**Object Oriented Programming**](software_engineering_foundations/object_oriented_programming/) *12:47*
-- [x] [**Recursion**](software_engineering_foundations/recursion/) *2:14*
-- [x] [**Foundations Recap**](software_engineering_foundations/foundations_recap/) *3:00*
+## Software Engineering Foundations
 
-## Main Course
+| Week | Course(s) | Status |
+|------|-----------|--------|
+|  1 | [Advanced Ruby](software_engineering_foundations/advanced_ruby/)<br>[Scope & References](software_engineering_foundations/scope_and_references/) | ![](https://img.shields.io/badge/-complete-green.svg) |
+|  2 | [RSpec](software_engineering_foundations/rspec/) | ![](https://img.shields.io/badge/-complete-green.svg) |
+|  3 | [Debugging](software_engineering_foundations/debugging) | ![](https://img.shields.io/badge/-complete-green.svg) |
+|  4 | [Blocks & Procs](software_engineering_foundations/blocks_and_procs/) | ![](https://img.shields.io/badge/-complete-green.svg) |
+|  5 | [Classes](software_engineering_foundations/classes/)<br>[Class Monkey Patching](software_engineering_foundations/class_monkey_patching/) | ![](https://img.shields.io/badge/-complete-green.svg) |
+|  6 | [Input/Output](software_engineering_foundations/input_output/) | ![](https://img.shields.io/badge/-complete-green.svg) |
+|  7 | [Object Oriented Programming](software_engineering_foundations/object_oriented_programming/) | ![](https://img.shields.io/badge/-complete-green.svg) |
+|  8 | [Recursion](software_engineering_foundations/recursion/)<br>[Foundations Recap](software_engineering_foundations/foundations_recap/) | ![](https://img.shields.io/badge/-complete-green.svg) |
 
-### Ruby - 158:17
-- [x] **Getting Started** *0:10*
-- [x] [**Enumerables and Debugging**](ruby/enumerables_and_debugging/) *22:00*
-- [ ] [**Reference**](ruby/reference/) *11:37*
-- [ ] **Recursion** *15:32*
-- [ ] **Git** *17:06*
-- [ ] **Data Structures** *17:25*
-- [ ] **Object-oriented programming** *11:23*
-- [ ] **OOP Contin.** *14:10*
-- [ ] **RSpec and TDD** *11:23*
-- [ ] **Big-O** *14:56*
-- [ ] **LRU Cache** *18:10*
-- [ ] **Additional Topics** *04:25*
+## Ruby
+
+| Week | Course(s) | Status |
+|------|-----------|--------|
+| 1 | [Enumerables and Debugging](ruby/enumerables_and_debugging/) | ![](https://img.shields.io/badge/-complete-green.svg) |
+| 2 | [Reference](ruby/reference/)<br>Recursion | ![](https://img.shields.io/badge/-working-yellow.svg) |
+| 3 | Git | ![](https://img.shields.io/badge/-pending-red.svg) |
+| 4 | Data Structures | ![](https://img.shields.io/badge/-pending-red.svg) |
+| 5 | Object-Oriented Programming | ![](https://img.shields.io/badge/-pending-red.svg) |
+| 6 | OOP Contin<br>RSpec and TDD | ![](https://img.shields.io/badge/-pending-red.svg) |
+| 7 | Big-O | ![](https://img.shields.io/badge/-pending-red.svg) |
+| 8 | LRU Cache | ![](https://img.shields.io/badge/-pending-red.svg) |
