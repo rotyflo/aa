@@ -20,8 +20,8 @@
 | # of Days | Courses | Status |
 |:---------:|---------|:------:| 
 8 | Enumerables and Debugging | ![](https://img.shields.io/badge/-complete-green.svg)
-4 | Reference | ![](https://img.shields.io/badge/-working-yellow.svg)
-5 | Recursion | ![](https://img.shields.io/badge/-pending-red.svg)
+4 | Reference | ![](https://img.shields.io/badge/-complete-green.svg)
+5 | Recursion | ![](https://img.shields.io/badge/-working-yellow.svg)
 6 | Git | ![](https://img.shields.io/badge/-pending-red.svg)
 6 | Data Structures | ![](https://img.shields.io/badge/-pending-red.svg)
 5 | Object-oriented programming | ![](https://img.shields.io/badge/-pending-red.svg)
