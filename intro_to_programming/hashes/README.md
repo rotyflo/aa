@@ -39,3 +39,15 @@ Write a method hand_score that takes in a string representing a hand of cards an
 ### Frequent Letters
 
 Write a method frequent_letters that takes in a string and returns an array containing the characters that appeared more than twice in the string.
+
+### Hash To Pairs
+
+Write a method hash_to_pairs that takes in a hash and returns a 2D array representing each key-value pair of the hash.
+
+### Unique Elements
+
+Write a method unique_elements that takes in an array and returns a new array where all duplicate elements are removed. Solve this using a hash.
+
+### Element Replace
+
+Write a method element_replace that takes in an array and a hash. The method should return a new array where elements of the original array are replaced with their corresponding values in the hash.
