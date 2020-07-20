@@ -27,3 +27,15 @@ Write a method last_index that takes in a string and a character. The method sho
 ### Most Vowels
 
 Write a method most_vowels that takes in a sentence string and returns the word of the sentence that contains the most vowels.
+
+### Prime
+
+Write a method prime? that takes in a number and returns a boolean, indicating whether the number is prime. A prime number is only divisible by 1 and itself.
+
+### Pick Primes
+
+Write a method pick_primes that takes in an array of numbers and returns a new array containing only the prime numbers.
+
+### Prime Factors
+
+Write a method prime_factors that takes in a number and returns an array containing all of the prime factors of the given number.
