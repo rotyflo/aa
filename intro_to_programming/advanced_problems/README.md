@@ -23,3 +23,7 @@ Write a method o_words that takes in a sentence string and returns an array of t
 ### Last Index
 
 Write a method last_index that takes in a string and a character. The method should return the last index where the character can be found in the string.
+
+### Most Vowels
+
+Write a method most_vowels that takes in a sentence string and returns the word of the sentence that contains the most vowels.
