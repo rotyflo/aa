@@ -67,3 +67,29 @@ Write a method caesar_cipher that takes in a string and a number. The method sho
 ### Vowel Cipher
 
 Write a method vowel_cipher that takes in a string and returns a new string where every vowel becomes the next vowel in the alphabet.
+
+### Double Letter Count
+
+Write a method that takes in a string and returns the number of times that the same letter repeats twice in a row.
+
+### Adjacent Sum
+
+Write a method adjacent_sum that takes in an array of numbers and returns a new array containing the sums of adjacent numbers in the original array. See the examples.
+
+### Pyramid Sum
+
+Write a method pyramid_sum that takes in an array of numbers representing the base of a pyramid. The function should return a 2D array representing a complete pyramid with the given base. To construct a level of the pyramid, we take the sum of adjacent elements of the level below.
+
+### All Else Equal
+
+Write a method all_else_equal that takes in an array of numbers. The method should return the element of the array that is equal to half of the sum of all elements of the array. If there is no such element, the method should return nil.
+
+### Anagrams
+
+Write a method anagrams? that takes in two words and returns a boolean indicating whether or not the words are anagrams. Anagrams are words that contain the same characters but not necessarily in the same order. Solve this without using .sort
+
+### Consonant Cancel
+
+Write a method consonant_cancel that takes in a sentence and returns a new sentence where every word begins with it's first vowel.
+
+###
