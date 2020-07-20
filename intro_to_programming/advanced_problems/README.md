@@ -1,0 +1,25 @@
+# Exercises
+
+### Map By Name
+
+Write a method map_by_name  that takes in an array of hashes and returns a new array containing the names of each hash.
+
+### Map By Key
+
+Write a method map_by_key that takes in an array of hashes and a key string. The method should returns a new array containing the values from each hash for the given key.
+
+### Yell Sentence
+
+Write a method yell_sentence that takes in a sentence string and returns a new sentence where every word is yelled. See the examples. Use map to solve this.
+
+### Whisper Words
+
+Write a method whisper_words that takes in an array of words and returns a new array containing a whispered version of each word. See the examples. Solve this using map :).
+
+### O Words
+
+Write a method o_words that takes in a sentence string and returns an array of the words that contain an "o". Use select in your solution!
+
+### Last Index
+
+Write a method last_index that takes in a string and a character. The method should return the last index where the character can be found in the string.
