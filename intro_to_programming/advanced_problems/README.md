@@ -92,4 +92,6 @@ Write a method anagrams? that takes in two words and returns a boolean indicatin
 
 Write a method consonant_cancel that takes in a sentence and returns a new sentence where every word begins with it's first vowel.
 
-###
+### Same Char Collapse
+
+Write a method same_char_collapse that takes in a string and returns a collapsed version of the string. To collapse the string, we repeatedly delete 2 adjacent characters that are the same until there are no such adjacent characters. If there are multiple pairs that can be collapsed, delete the leftmost pair. For example, we take the following steps to collapse "zzzxaaxy": zzzxaaxy -> zxaaxy -> zxxy -> zy
