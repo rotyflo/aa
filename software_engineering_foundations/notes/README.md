@@ -1,3 +1,6 @@
+# Notes
+
+## Becoming A Rubyist
 
 ### Implicit Returns
 ```ruby
@@ -18,7 +21,7 @@ def say_hi
     puts "hi"
 end
 
-# Less preferred 
+# Less preferred
 say_hi()
 
 # Preferred by a Rubyist
