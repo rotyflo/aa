@@ -151,3 +151,53 @@ multi_d = [
 
 p multi_d.flatten   # => ["a", "b", "c", "d", "e", "f"]
 ```
+
+### Symbols
+
+```ruby
+str = "hello"   # the string
+sym = :hello    # the symbol
+
+p str.length    # => 5
+p sym.length    # => 5
+
+p str[1]        # => "e"
+p sym[1]        # => "e"
+
+p str == sym    # => false
+# a string is different from a symbol!
+```
+
+#### Symbols are Immutable
+```ruby
+str = "hello"
+sym = :hello
+
+str[0] = "x"
+sym[0] = "x"
+
+p str   # => "xello"
+p sym   # => :hello
+```
+```ruby
+"hello".object_id   # => 70233443667980
+"hello".object_id   # => 70233443606440
+"hello".object_id   # => 70233443438700
+```
+```ruby
+:hello.object_id    # => 2899228
+:hello.object_id    # => 2899228
+:hello.object_id    # => 2899228
+```
+
+#### Symbols as hash keys
+```ruby
+my_bootcamp = { :name=>"App Academy", :color=>"red", :locations=>["NY", "SF", "ONLINE"] }
+p my_bootcamp           # => {:name=>"App Academy", :color=>"red", :locations=>["NY", "SF", "ONLINE"]}
+p my_bootcamp[:color]   #=> "red
+```
+```ruby
+my_bootcamp = { name:"App Academy", color:"red", locations:["NY", "SF", "ONLINE"] }
+p my_bootcamp           # => {:name=>"App Academy", :color=>"red", :locations=>["NY", "SF", "ONLINE"]}
+p my_bootcamp[:color]   #=> "red
+```
