@@ -2,10 +2,7 @@
 # The method should return true if the elements are in increasing order, false otherwise.
 # Do not use the built-in Array#sort in your solution :)
 def is_sorted(arr)
-  sorted = true
-  (0...arr.length - 1).each { |i| sorted = false if arr[i] > arr[i + 1] }
-  
-  sorted
+  (0...arr.length - 1).all? { |i| arr[i] <= arr[i + 1] }
 end
 
 
