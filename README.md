@@ -15,7 +15,7 @@
 * Advanced Problems
 
 **Software Engineering Foundations**
-* [Advanced Ruby](advanced_ruby/README.md)
+* [Advanced Ruby](https://github.com/rotyflo/appacademy/tree/master/software_engineering_foundations/advanced_ruby)
 * Scope & References
 * RSpec
 * Debuggin
