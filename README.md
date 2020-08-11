@@ -1,7 +1,7 @@
 
 # App Academy Curriculum
 
-**Intro to Programming**
+[**Intro to Programming**](https://open.appacademy.io/learn/full-stack-online/full-stack-online-intro-to-programming/)
 * Numbers
 * Booleans
 * Strings
@@ -15,7 +15,7 @@
 * Advanced Problems
 
 **Software Engineering Foundations**
-* [Advanced Ruby](https://github.com/rotyflo/appacademy/tree/master/software_engineering_foundations/advanced_ruby)
+* [Advanced Ruby](https://github.com/rotyflo/appacademy/tree/master/software-engineering-foundations/advanced-ruby)
 * Scope & References
 * RSpec
 * Debuggin
