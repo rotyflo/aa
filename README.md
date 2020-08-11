@@ -15,7 +15,7 @@
 * Advanced Problems
 
 **Software Engineering Foundations**
-* Advanced Ruby
+* [Advanced Ruby](advanced_ruby/README.md)
 * Scope & References
 * RSpec
 * Debuggin
