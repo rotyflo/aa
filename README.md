@@ -17,7 +17,7 @@
 **Software Engineering Foundations**
 * [Advanced Ruby](https://github.com/rotyflo/appacademy/tree/master/software-engineering-foundations/advanced-ruby)
 * [Scope & References](https://github.com/rotyflo/appacademy/tree/master/software-engineering-foundations/scope-and-references)
-* RSpec
+* [RSpec](https://github.com/rotyflo/appacademy/tree/master/software-engineering-foundations/rspec)
 * Debuggin
 * Blocks & Procs
 * Classes
