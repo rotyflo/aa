@@ -1,6 +1,6 @@
 # Software Engineering Foundations
 
-[## Advanced Ruby](https://github.com/rotyflo/appacademy/tree/master/software-engineering-foundations/advanced-ruby)
+## Advanced Ruby
 
 [**Becoming a Rubyist**](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/becoming-a-rubyist-notes)
 * Implicit Returns
@@ -37,7 +37,7 @@
 * Inject with a default accumulator
 
 
-[## Scope and References](https://github.com/rotyflo/appacademy/tree/master/software-engineering-foundations/scope-and-references)
+## Scope and References
 
 [**Bubble Sort**](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/bubble-sort-notes)
 * How does a pass of Bubble Sort work?
@@ -58,7 +58,7 @@
 * Create 3D arrays with `Array.new(3) { Array.new(3) }`
 
 
-[## RSpec](https://github.com/rotyflo/appacademy/tree/master/software-engineering-foundations/rspec)
+## RSpec
 
 [**Intro to Testing**](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/intro-to-testing-notes)
 * What is TDD?
@@ -78,7 +78,7 @@
 * Bring it all together
 
 
-[## Debugging](https://github.com/rotyflo/appacademy/tree/master/software-engineering-foundations/debugging)
+## Debugging
 
 [**Pry**](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/pry-notes)
 * Debugging using Pry

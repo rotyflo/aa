@@ -15,10 +15,10 @@
 * Advanced Problems
 
 **Software Engineering Foundations**
-* [Advanced Ruby](https://github.com/rotyflo/appacademy/tree/master/software-engineering-foundations/advanced-ruby)
-* [Scope & References](https://github.com/rotyflo/appacademy/tree/master/software-engineering-foundations/scope-and-references)
-* [RSpec](https://github.com/rotyflo/appacademy/tree/master/software-engineering-foundations/rspec)
-* Debuggin
+* Advanced Ruby ![status](https://img.shields.io/badge/status-complete-green)
+* Scope & References ![status](https://img.shields.io/badge/status-complete-green)
+* RSpec ![status](https://img.shields.io/badge/status-complete-green)
+* Debugging
 * Blocks & Procs
 * Classes
 * Class Monkey Patching
