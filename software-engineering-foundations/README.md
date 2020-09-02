@@ -104,3 +104,16 @@
 * NoMethodError
 * ArgumentError
 * TypeError
+
+
+## Blocks & Procs
+
+[**Blocks**](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/blocks-notes)
+* Block Basics
+* Using Methods as Blocks
+
+[**Procs**](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/procs-notes)
+* Creating a Proc
+* Calling a Proc
+* Passing a Proc to a Method
+* Using `&`
