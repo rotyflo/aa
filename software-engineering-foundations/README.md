@@ -117,3 +117,21 @@
 * Calling a Proc
 * Passing a Proc to a Method
 * Using `&`
+
+
+## Classes
+
+[**Class Basics**](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/class-basics-notes)
+* Creating a Cat Class
+* Initializing New Cats
+* Getter Methods
+* Setter Methods
+
+[**Instance vs Class Variables**](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/instance-vs-class-variables-notes)
+* Instance Variables
+* Class Variables
+* Class Constants
+
+[**Instance vs Class Methods**](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/instance-vs-class-methods-notes)
+* Instance Methods
+* Class Methods
