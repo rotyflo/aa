@@ -135,3 +135,12 @@
 [**Instance vs Class Methods**](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/instance-vs-class-methods-notes)
 * Instance Methods
 * Class Methods
+
+
+## Class Monkey Patching
+
+[**Monkey Patching**](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/monkey-patching-lecture)
+* What is Monkey Patching?
+* Add methods to `String`
+* Add methods to `Integer`
+* Add methods to `Array`
