@@ -1,6 +1,11 @@
 # Software Engineering Foundations
 
-## Advanced Ruby
+## Applications
+
+* [Guessing Game](https://github.com/rotyflo/appacademy/tree/master/software-engineering-foundations/input-output/guessing-game)
+
+## Notes
+### Advanced Ruby
 
 [**Becoming a Rubyist**](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/becoming-a-rubyist-notes)
 * Implicit Returns
@@ -37,7 +42,7 @@
 * Inject with a default accumulator
 
 
-## Scope and References
+### Scope and References
 
 [**Bubble Sort**](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/bubble-sort-notes)
 * How does a pass of Bubble Sort work?
@@ -58,7 +63,7 @@
 * Create 3D arrays with `Array.new(3) { Array.new(3) }`
 
 
-## RSpec
+### RSpec
 
 [**Intro to Testing**](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/intro-to-testing-notes)
 * What is TDD?
@@ -78,7 +83,7 @@
 * Bring it all together
 
 
-## Debugging
+### Debugging
 
 [**Pry**](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/pry-notes)
 * Debugging using Pry
@@ -106,7 +111,7 @@
 * TypeError
 
 
-## Blocks & Procs
+### Blocks & Procs
 
 [**Blocks**](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/blocks-notes)
 * Block Basics
@@ -119,7 +124,7 @@
 * Using `&`
 
 
-## Classes
+### Classes
 
 [**Class Basics**](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/class-basics-notes)
 * Creating a Cat Class
@@ -137,7 +142,7 @@
 * Class Methods
 
 
-## Class Monkey Patching
+### Class Monkey Patching
 
 [**Monkey Patching**](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/monkey-patching-lecture)
 * What is Monkey Patching?
@@ -146,7 +151,7 @@
 * Add methods to `Array`
 
 
-## Input / Ouput
+### Input / Ouput
 
 [**Requiring Files](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/requiring-files-notes)
 * Seperation of Concerns
