@@ -2,17 +2,17 @@
 # App Academy Curriculum
 
 [**Intro to Programming**](https://open.appacademy.io/learn/full-stack-online/full-stack-online-intro-to-programming/)
-- [ ] Numbers
-- [ ] Booleans
-- [ ] Strings
-- [ ] Variables
-- [ ] Methods
-- [ ] Conditionals
-- [ ] Loops
-- [ ] Arrays
-- [ ] Array Methods & Enumerables
-- [ ] Hashes
-- [ ] Advanced Problems
+- [x] Numbers
+- [x] Booleans
+- [x] Strings
+- [x] Variables
+- [x] Methods
+- [x] Conditionals
+- [x] Loops
+- [x] Arrays
+- [x] Array Methods & Enumerables
+- [x] Hashes
+- [x] Advanced Problems
 
 **Software Engineering Foundations**
 - [x] Advanced Ruby
