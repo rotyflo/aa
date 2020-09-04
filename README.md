@@ -18,10 +18,10 @@
 - [x] Advanced Ruby
 - [x] Scope & References
 - [x] RSpec
-- [ ] Debugging
-- [ ] Blocks & Procs
-- [ ] Classes
-- [ ] Class Monkey Patching
+- [x] Debugging
+- [x] Blocks & Procs
+- [x] Classes
+- [x] Class Monkey Patching
 - [ ] Input/Output
 - [ ] Object Oriented Programming
 - [ ] Recursion
