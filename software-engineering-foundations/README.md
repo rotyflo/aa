@@ -153,7 +153,7 @@
 
 ### Input / Ouput
 
-[**Requiring Files](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/requiring-files-notes)
+[**Requiring Files**](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/requiring-files-notes)
 * Seperation of Concerns
 * Import files with `require_relative`
 * `require` vs `require_relative`
