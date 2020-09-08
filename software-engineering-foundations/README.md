@@ -4,6 +4,7 @@
 
 **Games**
 * [Guessing Game](https://github.com/rotyflo/appacademy/tree/master/software-engineering-foundations/input-output/guessing-game)
+* [Hangman](https://github.com/rotyflo/appacademy/tree/master/software-engineering-foundations/input-output/hangman)
 
 ## Notes
 
