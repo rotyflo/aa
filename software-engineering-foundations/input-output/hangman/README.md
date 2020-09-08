@@ -1,5 +1,5 @@
 # Hangman
-                                                                                      |
+
 ## Description
 Try to guess what the secret word is!
 If you guess 5 incorrect letters, you lose.
