@@ -22,7 +22,7 @@
 - [x] Blocks & Procs
 - [x] Classes
 - [x] Class Monkey Patching
-- [ ] Input/Output
+- [x] Input/Output
 - [ ] Object Oriented Programming
 - [ ] Recursion
 - [ ] Foundations Recap

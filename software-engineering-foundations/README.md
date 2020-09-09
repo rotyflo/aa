@@ -1,13 +1,5 @@
 # Software Engineering Foundations
 
-## Applications
-
-**Games**
-* [Guessing Game](https://github.com/rotyflo/appacademy/tree/master/software-engineering-foundations/input-output/guessing-game)
-* [Hangman](https://github.com/rotyflo/appacademy/tree/master/software-engineering-foundations/input-output/hangman)
-
-## Notes
-
 **Advanced Ruby**
 * [Becoming a Rubyist](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/becoming-a-rubyist-notes)
     * Implicit Returns
