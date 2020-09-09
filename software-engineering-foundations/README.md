@@ -123,6 +123,15 @@
     * Import files with `require_relative`
     * `require` vs `require_relative`
 * [User Input](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/user-input-notes)
-    * Getting Input with `gets`
-    * Dealing with New Lines with `chomp`
-    * Getting Numbers with `to_i`
+    * Getting Input - `gets`
+    * Dealing with New Lines - `chomp`
+    * Getting Numbers - `to_i`
+
+**Object Oriented Programming**
+* [Abstraction and Encapsulation](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/abstraction-and-encapsulation-notes)
+    * Abstraction - making the complex simple
+    * Encapsulation - managing what the user can see/modify
+* [Attr methods](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/attr-methods-notes)
+    * `attr_reader` - getters
+    * `attr_writer` - setters
+    * `attr_accessor` - both
