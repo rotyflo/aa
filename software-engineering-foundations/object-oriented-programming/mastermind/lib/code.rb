@@ -11,7 +11,7 @@ class Code
   end
 
   def self.random(length)
-    Code.new(Array.new(length, POSSIBLE_PEGS.keys[rand(POSSIBLE_PEGS.length)]))
+    Code.new(Array.new(length) { POSSIBLE_PEGS.keys.sample })
   end
 
   def self.from_string(string)
@@ -33,18 +33,18 @@ class Code
     @pegs.length
   end
 
-  def num_exact_matches(guess)
-    @pegs.each_with_index.count { |peg, i| peg == guess[i] }
+  def num_exact_matches(code)
+    @pegs.each_with_index.count { |peg, i| peg == code[i] }
   end
 
-  def num_near_matches(guess)
-    guess.pegs.each_with_index.count do |peg, i|
+  def num_near_matches(code)
+    code.pegs.each_with_index.count do |peg, i|
       @pegs.include?(peg) && !(peg == @pegs[i])
     end
   end
 
-  def ==(guess)
-    return false if @pegs.length != guess.length
-    @pegs.each_with_index.all? { |peg, i| peg == guess[i] }
+  def ==(code)
+    return false if @pegs.length != code.length
+    @pegs.each_with_index.all? { |peg, i| peg == code[i] }
   end
 end
