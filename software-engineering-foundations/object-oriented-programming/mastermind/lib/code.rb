@@ -32,4 +32,19 @@ class Code
   def length
     @pegs.length
   end
+
+  def num_exact_matches(guess)
+    @pegs.each_with_index.count { |peg, i| peg == guess[i] }
+  end
+
+  def num_near_matches(guess)
+    guess.pegs.each_with_index.count do |peg, i|
+      @pegs.include?(peg) && !(peg == @pegs[i])
+    end
+  end
+
+  def ==(guess)
+    return false if @pegs.length != guess.length
+    @pegs.each_with_index.all? { |peg, i| peg == guess[i] }
+  end
 end
