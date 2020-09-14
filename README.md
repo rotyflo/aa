@@ -23,9 +23,10 @@
 - [x] Classes
 - [x] Class Monkey Patching
 - [x] Input/Output
-- [ ] Object Oriented Programming
-- [ ] Recursion
+- [x] Object Oriented Programming
+- [x] Recursion
 - [ ] Foundations Recap
+- [ ] Additional Projects
 
 **Ruby**
 - [ ] Enumerables and Debugging
