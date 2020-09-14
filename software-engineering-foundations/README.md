@@ -135,3 +135,7 @@
     * `attr_reader` - getters
     * `attr_writer` - setters
     * `attr_accessor` - both
+* [Syntactic Sugar](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/syntactic-sugar-notes)
+    * Implementing Operator Methods - `#>`, `#==`, `#+`, etc
+    * Implementing Bracket Methods - `#[]`
+    * Implementing `#[]=`
