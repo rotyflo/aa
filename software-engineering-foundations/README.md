@@ -139,3 +139,15 @@
     * Implementing Operator Methods - `#>`, `#==`, `#+`, etc
     * Implementing Bracket Methods - `#[]`
     * Implementing `#[]=`
+
+**Recursion**
+* [Recursion](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/recursion-notes)
+    * Recursion - when a method calls itself
+    * Base Case - known stopping point of recursive dive
+    * Recursive Step - subsequent call
+* [Recursive Factorial](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/recursive-factorial-notes)
+    * Base Case - `return 1 if n == 0`
+    * Recursive Step - `n * factorial(n - 1)`
+* [Recursive Fib](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/recursive-fib-notes)
+    * Base Case - `return 1 if n == 1 || n == 2`
+    * Recursive Step - `fib(n - 1) + fib(n - 2)`
