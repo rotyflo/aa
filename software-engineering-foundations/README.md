@@ -2,8 +2,8 @@
 
 **Advanced Ruby**
 * [Becoming a Rubyist](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/becoming-a-rubyist-notes)
-    * Implicit Returns
-    * Omitting parentheses for method calls with no arguments
+    * Use implicit returns
+    * Omit parentheses for method calls with no arguments
     * Use single line conditionals when possible
     * Use built-in methods
     * Use enumerables to iterate
@@ -151,3 +151,15 @@
 * [Recursive Fib](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/recursive-fib-notes)
     * Base Case - `return 1 if n == 1 || n == 2`
     * Recursive Step - `fib(n - 1) + fib(n - 2)`
+
+**Foundations Recap**
+* [Spaceship Operator](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/spaceship-operator-notes)
+    * How it works - `a <=> b` - less than: -1, equal to: 0, greater than: 1
+* [Nil as Falsey](https://open.appacademy.io/learn/full-stack-online/software-engineering-foundations/nil-as-falsey-notes)
+    * `nil` and `false` are the only falsey values (in Ruby)
+    * Everything else is truthy
+    * What OR does - `a || b` - return `a` if truthy, else return `b`
+    * `name = name || 'john'` - name is name if exists, else name is 'john'
+    * `name ||= 'john'` - shorthand for above
+    * Lazy initialization - call a method to set massive attributes only when needed
+    * Class#my_big_var - `@my_big_var ||= ['huge', 'array']`
