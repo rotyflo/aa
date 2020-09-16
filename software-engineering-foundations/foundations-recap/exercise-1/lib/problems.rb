@@ -59,13 +59,10 @@ class Hash
     # hash_2.my_select { |k, v| k + 1 == v }      # => {10=>11, 5=>6, 7=>8})
     # hash_2.my_select                            # => {4=>4}
     def my_select(&prc)
-        hash = {}
-        if prc
-            self.each { |key, val| hash[key] = val if prc.call(key, val) }
-        else
-            self.each { |key, val| hash[key] = val if key == val }
-        end
-        hash
+        prc ||= Proc.new { |k, v| k == v }
+        selected = {}
+        self.each { |k, v| selected[k] = v if prc.call(k, v) }
+        selected
     end
 end
 
