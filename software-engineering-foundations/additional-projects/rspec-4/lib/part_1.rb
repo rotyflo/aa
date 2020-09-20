@@ -5,14 +5,9 @@ def my_reject(arr, &prc)
 end
 
 def my_one?(arr, &prc)
-    only_one = false
-    arr.each do |ele|
-        if prc.call(ele)
-            return false if only_one == true
-            only_one = true
-        end
-    end
-    only_one
+    count = 0
+    arr.each { |ele| count += 1 if prc.call(ele) }
+    count == 1
 end
 
 def hash_select(hash, &prc)
