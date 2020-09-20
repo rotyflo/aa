@@ -21,10 +21,14 @@ def hash_select(hash, &prc)
     selected
 end
 
-def xor_select(arr, &prc)
-
+def xor_select(arr, prc1, prc2)
+    selected = []
+    arr.each { |ele| selected << ele if prc1.call(ele) ^ prc2.call(ele) }
+    selected
 end
 
-def proc_count(val, arr)
-
+def proc_count(val, procs)
+    count = 0
+    procs.each { |proc| count += 1 if proc.call(val) }
+    count
 end
