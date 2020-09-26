@@ -1,35 +1,35 @@
 # Software Engineering Foundations
 
 **Topics**
-Becoming a Rubyist
-Common Enumerables
-Using Documentation
-Symbols
-Default Arguments and Option Hashes
-Splat Operator
-Inject
-Bubble Sort
-Scope
-Variable References
-Intro to Testing
-RSpec
-Exceptions
-Pry
-Bye Bug
-Common Error Types
-Blocks
-Procs
-Class Basics
-Instance Vs Class Variables
-Instance Vs Class Methods
-Monkey Patching
-Requiring Files
-User Input
-Abstraction and Encapsulation
-Attr Methods
-Syntactic Sugar
-Recursion
-Recursive Factorial
-Recursive Fib
-Spaceship Operator
-Nil as Falsey
+- Becoming a Rubyist
+- Common Enumerables
+- Using Documentation
+- Symbols
+- Default Arguments and Option Hashes
+- Splat Operator
+- Inject
+- Bubble Sort
+- Scope
+- Variable References
+- Intro to Testing
+- RSpec
+- Exceptions
+- Pry
+- Bye Bug
+- Common Error Types
+- Blocks
+- Procs
+- Class Basics
+- Instance Vs Class Variables
+- Instance Vs Class Methods
+- Monkey Patching
+- Requiring Files
+- User Input
+- Abstraction and Encapsulation
+- Attr Methods
+- Syntactic Sugar
+- Recursion
+- Recursive Factorial
+- Recursive Fib
+- Spaceship Operator
+- Nil as Falsey
