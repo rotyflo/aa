@@ -15,4 +15,8 @@ class Player
         print "You earned a letter!\n"
         @losses += 1
     end
+
+    def lose?
+        @losses == 4
+    end
 end

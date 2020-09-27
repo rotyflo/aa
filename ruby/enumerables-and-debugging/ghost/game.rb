@@ -12,21 +12,21 @@ class Game
     def run
         print "\nWelcome to Ghost!\n"
         print "Guess one letter at a time.\n"
-        print "You will earn 1 letter for each guess that doesn't build towards a new word.\n"
-        print "You lose if you complete a word or earn 5 letters, spelling 'GHOST'.\n"
+        print "You will earn 1 letter for each guess that completes a word or doesn't build towards a new word.\n"
+        print "You lose if you earn 5 letters, spelling 'GHOST'.\n"
         print "Last one standing wins.\n"
 
         while !over?
             play_round
         end
 
-        print "\n#{previous_player.name} loses!\n"
+        print "\n#{@players[0].name} wins!\n"
     end
 
     def play_round
         print_score
         take_turn(current_player)
-        next_player!
+        current_player.lose? ? @players.delete_at(@player_i) : next_player!
     end
 
     def current_player
@@ -48,12 +48,16 @@ class Game
     def take_turn(player)
         guess = current_player.guess.downcase
         @fragment += guess if valid_play?(guess)
+        print "#{current_player.name} has been dropped.\n" if current_player.lose?
         print "\nWord: #{@fragment.upcase}\n"
     end
 
     def valid_play?(char)
         if "abcdefghijklmnopqrstuvwxyz".include?(char)
             if @dictionary.any? { |word| word.start_with?(@fragment + char) }
+                if @dictionary.include?(@fragment + char)
+                    current_player.alert_invalid_guess
+                end
                 return true
             end
         end
@@ -67,7 +71,7 @@ class Game
     end
 
     def over?
-        previous_player.losses == 4 || @dictionary.include?(@fragment)
+        @players.length < 2
     end
 end
 
