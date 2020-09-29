@@ -1,8 +1,12 @@
 class Card
-  def initialize(face_val)
+	def initialize(face_val)
     @face_val = face_val
     @faceup = false
-  end
+	end
+	
+	def faceup?
+		@faceup
+	end
 
   def display
     @face_val if @faceup
