@@ -22,13 +22,13 @@ class Board
   end
 
   def render
-    render = "  " + (0...@grid.length).to_a.join(" ") + "\n"
+    output = "  " + (0...@grid.length).to_a.join(" ") + "\n"
     @grid.each.with_index do |row, i|
-      render += i.to_s + " " + row.map do |card|
+      output += i.to_s + " " + row.map do |card|
         card.faceup? ? card : " "
       end.join(" ") + "\n"
     end
-    print render
+    print output
   end
 
   def won?
@@ -37,5 +37,6 @@ class Board
 
   def reveal(x, y)
     @grid[x][y].reveal
+    @grid[x][y]
   end
 end
