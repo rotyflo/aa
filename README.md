@@ -29,7 +29,7 @@
 - [ ] Additional Projects
 
 **Ruby**
-- [ ] Enumerables and Debugging
+- [x] Enumerables and Debugging
 - [ ] Reference
 - [ ] Recursion
 - [ ] Git
