@@ -1,10 +1,10 @@
+require_relative "card"
+
 class Player
 	def get_position
-		position = []
-		until position.length == 2 && position.all? { |ele| (0..4).to_a.include?(ele) }
-			print "Select a position: "
-			position = gets.chomp.split("").map(&:to_i)
-		end
-		position
+		print "Enter position: "
+		pos = gets.chomp.split("").map(&:to_i)
+		return pos if pos.length == 2 && pos.all? { |i| (0..4).to_a.include?(i) }
+		nil
 	end
 end

@@ -22,6 +22,7 @@ class Board
 	end
 
 	def render
+		system("clear")
 		output = "  " + (0...@grid.length).to_a.join(" ") + "\n"
 		@grid.each.with_index do |row, i|
 			output += i.to_s + " " + row.map do |card|
@@ -35,8 +36,15 @@ class Board
 		@grid.flatten.all? { |card| card.faceup? }
 	end
 
-	def reveal(x, y)
-		@grid[x][y].reveal
-		@grid[x][y]
+	def reveal(position)
+		if position
+			y, x = position
+			card = @grid[x][y]
+			unless card.faceup?
+				card.reveal
+				return card
+			end
+		end
+		nil
 	end
 end
