@@ -18,7 +18,7 @@ class Game
 			pos = @player.get_position
 			guess = @board.reveal(pos)
 			if guess
-				@player.receive_revealed_card(pos, guess.face_val)
+				@player.receive_revealed_card(pos, guess)
 				@flipped_cards += 1
 				determine_match(guess)
 				@prev_guess = guess

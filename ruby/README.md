@@ -1,5 +1,12 @@
 # Ruby
 
+## Assignments
+- [x] Enumerables
+- [x] Ghost
+- [ ] Memory Puzzle
+
+
+## Material
 **Enumerables and Debugging**
 - Nontechnical Overview of Ruby
 - Debugging
