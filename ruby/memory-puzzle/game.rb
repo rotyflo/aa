@@ -1,10 +1,11 @@
 require_relative "board"
 require_relative "player"
+require_relative "computer"
 
 class Game
-	def initialize
+	def initialize(player)
 		@board = Board.new
-		@player = Player.new
+		@player = player
 		@prev_guess = nil
 		@flipped_cards = 0
 		@turns = 0
@@ -14,8 +15,10 @@ class Game
 		@board.populate
 		until over
 			@board.render
-			guess = @board.reveal(@player.get_position)
+			pos = @player.get_position
+			guess = @board.reveal(pos)
 			if guess
+				@player.receive_revealed_card(pos, guess.face_val)
 				@flipped_cards += 1
 				determine_match(guess)
 				@prev_guess = guess
@@ -47,5 +50,5 @@ class Game
 	end
 end
 
-game = Game.new
+game = Game.new(Computer.new)
 game.play

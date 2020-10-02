@@ -1,5 +1,3 @@
-require_relative "card"
-
 class Player
 	def get_position
 		print "Enter position: "
