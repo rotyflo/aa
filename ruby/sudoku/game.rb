@@ -8,15 +8,15 @@ class Game
 	def play
 		until @board.solved?
 			@board.render
-			tile = @board.get_tile
-			num = get_val
-			@board.update_position(tile, num)
+			pos = @board.get_position
+			num = get_value
+			@board.update_position(pos, num)
 		end
 		@board.render
 		puts "You win!"
 	end
 
-	def get_val
+	def get_value
 		print "Number: "
 		gets.chomp[0]
 	end

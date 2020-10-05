@@ -29,14 +29,11 @@ class Board
 		tile.solved? ? tile.green : tile.white
 	end
 
-	def get_tile
-		y, x = get_position
-		@grid[x][y]
-	end
-
 	def get_position
 		print "Position: "
-		gets.chomp.split("")[0..1].map(&:to_i)
+		pos = gets.chomp.split("")[0..1].map(&:to_i)
+		y, x = pos
+		@grid[x][y]
 	end
 
 	def update_position(tile, str)
