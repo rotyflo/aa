@@ -16,7 +16,7 @@ class Tile
 	end
 
 	def to_s
-		@value.to_s
+		@value
 	end
 
 	def white
@@ -33,6 +33,12 @@ class Tile
 
 	def solved?
 		@solved
+	end
+
+	def render
+		return red if @given
+		return @blank if @value == "0"
+		solved? ? green : white
 	end
 
 	def mark_solved

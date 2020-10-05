@@ -19,24 +19,18 @@ class Board
 	end
 
 	def render_row(row, row_num)
-		line = row.map { |tile| render_tile(tile) }
+		line = row.map { |tile| tile.render }
 		"#{row_num} | #{line.join(" ")}\n"
 	end
 
-	def render_tile(tile)
-		return tile.red if tile.given
-		return tile.blank if tile == "0"
-		tile.solved? ? tile.green : tile.white
-	end
-
-	def get_position
+	def select_tile
 		print "Position: "
 		pos = gets.chomp.split("")[0..1].map(&:to_i)
 		y, x = pos
 		@grid[x][y]
 	end
 
-	def update_position(tile, str)
+	def update_tile(tile, str)
 		tile.value = str unless tile.given
 	end
 

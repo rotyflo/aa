@@ -8,9 +8,9 @@ class Game
 	def play
 		until @board.solved?
 			@board.render
-			pos = @board.get_position
-			num = get_value
-			@board.update_position(pos, num)
+			tile = @board.select_tile
+			val = get_value
+			@board.update_tile(tile, val)
 		end
 		@board.render
 		puts "You win!"
