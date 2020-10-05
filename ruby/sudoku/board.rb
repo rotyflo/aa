@@ -1,5 +1,4 @@
 require "byebug"
-require "colorize"
 require_relative "tile"
 
 class Board
@@ -51,9 +50,10 @@ class Board
 
 	def solved?
 		unsolve_all_tiles
-		rows_are_solved = @grid.all? { |row| uniq_tiles?(row) }
-		cols_are_solved = @grid.transpose.all? { |col| uniq_tiles?(col) }
-		rows_are_solved && cols_are_solved
+		is_solved = true
+		@grid.each { |row| is_solved = false unless uniq_tiles?(row) }
+		@grid.transpose.each { |col| is_solved = false unless uniq_tiles?(col) }
+		is_solved
 	end
 
 	def uniq_tiles?(section)
