@@ -23,5 +23,5 @@ class Game
 	end
 end
 
-game = Game.new("puzzles/sudoku1_almost.txt")
+game = Game.new("puzzles/sudoku1.txt")
 game.play

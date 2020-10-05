@@ -1,4 +1,5 @@
 require "set"
+require "colorize"
 require_relative "tile"
 
 class Board
@@ -29,7 +30,8 @@ class Board
 					tile.blank
 				end
 			end
-			output += i.to_s + " | " + line.join(" ") + "\n"
+			line.map! { |tile| tile.to_s.colorize(:green) } if uniq_tiles?(row)
+			output += "#{i} | #{line.join(" ")}\n"
 		end
 		print output + "\n"
 	end
