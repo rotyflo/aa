@@ -8,6 +8,7 @@ class Tile
 		@value = value
 		@given = @value != "0"
 		@blank = "."
+		@solved = false
 	end
 
 	def ==(string)
@@ -18,7 +19,27 @@ class Tile
 		@value.to_s
 	end
 
-	def unchangeable
+	def white
+		@value.colorize(:white)
+	end
+
+	def red
 		@value.colorize(:red)
+	end
+
+	def green
+		@value.colorize(:green)
+	end
+
+	def solved?
+		@solved
+	end
+
+	def mark_solved
+		@solved = true
+	end
+
+	def mark_unsolved
+		@solved = false
 	end
 end

@@ -1,4 +1,4 @@
-require "set"
+require "byebug"
 require "colorize"
 require_relative "tile"
 
@@ -22,15 +22,14 @@ class Board
 		output += "  -------------------\n"
 		@grid.each_with_index do |row, i|
 			line = row.map do |tile|
-				if tile.given && tile != "0"
-					tile.unchangeable
-				elsif tile != "0"
-					tile
-				else
+				if tile.given
+					tile.red
+				elsif tile == "0"
 					tile.blank
+				else
+					tile.solved? ? tile.green : tile.white
 				end
 			end
-			line.map! { |tile| tile.to_s.colorize(:green) } if uniq_tiles?(row)
 			output += "#{i} | #{line.join(" ")}\n"
 		end
 		print output + "\n"
@@ -42,6 +41,7 @@ class Board
 	end
 
 	def get_position
+		print "Position: "
 		gets.chomp.split("")[0..1].map(&:to_i)
 	end
 
@@ -50,14 +50,25 @@ class Board
 	end
 
 	def solved?
-		rows_solved = @grid.all? { |row| uniq_tiles?(row) }
-		cols_solved = @grid.transpose.all? { |col| uniq_tiles?(col) }
-		rows_solved && cols_solved
+		unsolve_all_tiles
+		rows_are_solved = @grid.all? { |row| uniq_tiles?(row) }
+		cols_are_solved = @grid.transpose.all? { |col| uniq_tiles?(col) }
+		rows_are_solved && cols_are_solved
 	end
 
-	def uniq_tiles?(row)
-		nums = row.map { |tile| tile.to_s }
+	def uniq_tiles?(section)
+		nums = section.map { |tile| tile.to_s }
 		nums.select! { |num| num != "0" }
-		nums.uniq.length == 9
+		is_unique = nums.uniq.length == 9
+		solve_tiles(section) if is_unique
+		is_unique
+	end
+
+	def solve_tiles(section)
+		section.each { |tile| tile.mark_solved }
+	end
+
+	def unsolve_all_tiles
+		@grid.flatten.each { |tile| tile.mark_unsolved }
 	end
 end

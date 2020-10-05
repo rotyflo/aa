@@ -8,9 +8,7 @@ class Game
 	def play
 		until @board.solved?
 			@board.render
-			print "Position: "
 			tile = @board.get_tile
-			print "Number: "
 			num = get_val
 			@board.update_position(tile, num)
 		end
@@ -19,6 +17,7 @@ class Game
 	end
 
 	def get_val
+		print "Number: "
 		gets.chomp[0]
 	end
 end
