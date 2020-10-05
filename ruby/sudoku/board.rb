@@ -53,6 +53,7 @@ class Board
 		is_solved = true
 		@grid.each { |row| is_solved = false unless uniq_tiles?(row) }
 		@grid.transpose.each { |col| is_solved = false unless uniq_tiles?(col) }
+		@grid.each_3x3 { |square| is_solved = false unless uniq_tiles?(square) }
 		is_solved
 	end
 
@@ -72,3 +73,27 @@ class Board
 		@grid.flatten.each { |tile| tile.mark_unsolved }
 	end
 end
+
+class Array
+	def each_3x3(&prc)
+		squares = Array.new(9) { [] }
+		(0..2).each { |i| (0..2).each { |j| squares[0] << self[i][j] } }
+		(0..2).each { |i| (3..5).each { |j| squares[1] << self[i][j] } }
+		(0..2).each { |i| (6..8).each { |j| squares[2] << self[i][j] } }
+		(3..5).each { |i| (0..2).each { |j| squares[3] << self[i][j] } }
+		(3..5).each { |i| (3..5).each { |j| squares[4] << self[i][j] } }
+		(3..5).each { |i| (6..8).each { |j| squares[5] << self[i][j] } }
+		(6..8).each { |i| (0..2).each { |j| squares[6] << self[i][j] } }
+		(6..8).each { |i| (3..5).each { |j| squares[7] << self[i][j] } }
+		(6..8).each { |i| (6..8).each { |j| squares[8] << self[i][j] } }
+		squares.each do |square|
+			prc.call(square)
+		end
+	end
+end
+
+# x x x		[0, 0], [1, 0], [2, 0]
+# x x x		[0, 1], [1, 1], [2, 1]
+# x x x		[0, 2], [1, 2], [2, 2]
+
+# 012 012, 012 345, 012 678
