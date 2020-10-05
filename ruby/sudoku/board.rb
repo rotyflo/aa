@@ -1,15 +1,10 @@
-require "byebug"
 require_relative "tile"
 
 class Board
 	def self.from_file(filename)
 		lines = IO.readlines(filename, chomp: true)
-		lines.map! do |line|
-			line.split("").map! { |char| Tile.new(char) }
-		end
+		lines.map! { |line| line.split("").map! { |char| Tile.new(char) } }
 	end
-
-	attr_reader :grid
 
 	def initialize(filename)
 		@grid = Board.from_file(filename)
@@ -19,19 +14,19 @@ class Board
 		system("clear")
 		output = "    0 1 2 3 4 5 6 7 8\n"
 		output += "  -------------------\n"
-		@grid.each_with_index do |row, i|
-			line = row.map do |tile|
-				if tile.given
-					tile.red
-				elsif tile == "0"
-					tile.blank
-				else
-					tile.solved? ? tile.green : tile.white
-				end
-			end
-			output += "#{i} | #{line.join(" ")}\n"
-		end
+		@grid.each_with_index { |row, i| output += render_row(row, i) }
 		print output + "\n"
+	end
+
+	def render_row(row, row_num)
+		line = row.map { |tile| render_tile(tile) }
+		"#{row_num} | #{line.join(" ")}\n"
+	end
+
+	def render_tile(tile)
+		return tile.red if tile.given
+		return tile.blank if tile == "0"
+		tile.solved? ? tile.green : tile.white
 	end
 
 	def get_tile
@@ -53,7 +48,7 @@ class Board
 		is_solved = true
 		@grid.each { |row| is_solved = false unless uniq_tiles?(row) }
 		@grid.transpose.each { |col| is_solved = false unless uniq_tiles?(col) }
-		@grid.each_3x3 { |square| is_solved = false unless uniq_tiles?(square) }
+		@grid.each_square { |square| is_solved = false unless uniq_tiles?(square) }
 		is_solved
 	end
 
@@ -74,26 +69,17 @@ class Board
 	end
 end
 
-class Array
-	def each_3x3(&prc)
-		squares = Array.new(9) { [] }
-		(0..2).each { |i| (0..2).each { |j| squares[0] << self[i][j] } }
-		(0..2).each { |i| (3..5).each { |j| squares[1] << self[i][j] } }
-		(0..2).each { |i| (6..8).each { |j| squares[2] << self[i][j] } }
-		(3..5).each { |i| (0..2).each { |j| squares[3] << self[i][j] } }
-		(3..5).each { |i| (3..5).each { |j| squares[4] << self[i][j] } }
-		(3..5).each { |i| (6..8).each { |j| squares[5] << self[i][j] } }
-		(6..8).each { |i| (0..2).each { |j| squares[6] << self[i][j] } }
-		(6..8).each { |i| (3..5).each { |j| squares[7] << self[i][j] } }
-		(6..8).each { |i| (6..8).each { |j| squares[8] << self[i][j] } }
-		squares.each do |square|
-			prc.call(square)
-		end
+class Array # monkey patch for consistent style in Board#solved?
+	def each_square(&prc)
+		squares = []
+		axes = [(0..2), (3..5), (6..8)]
+		axes.each { |axis| 3.times { |n| squares << get_square(axis, axes[n]) } }
+		squares.each { |square| prc.call(square) }
+	end
+
+	def get_square(x_axis, y_axis)
+		square = []
+		x_axis.each { |x| y_axis.each { |y| square << self[x][y] } }
+		square
 	end
 end
-
-# x x x		[0, 0], [1, 0], [2, 0]
-# x x x		[0, 1], [1, 1], [2, 1]
-# x x x		[0, 2], [1, 2], [2, 2]
-
-# 012 012, 012 345, 012 678
