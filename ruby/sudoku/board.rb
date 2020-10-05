@@ -16,9 +16,34 @@ class Board
 		system("clear")
 		output = ""
 		@grid.each do |row|
-			line = row.map { |tile| tile.to_s == "0" ? "." : tile.to_s }
+			line = row.map do |tile|
+				if tile.given && tile != "0"
+					tile.unchangeable
+				elsif tile != "0"
+					tile
+				else
+					tile.blank
+				end
+			end
 			output += line.join(" ") + "\n"
 		end
 		print output
+	end
+
+	def get_tile
+		y, x = get_position
+		@grid[x][y]
+	end
+
+	def get_position
+		gets.chomp.split("")[0..1].map(&:to_i)
+	end
+
+	def update_position(tile, str)
+		tile.value = str unless tile.given
+	end
+
+	def solved?
+		false
 	end
 end
