@@ -8,10 +8,14 @@ class Game
 	def play
 		until @board.solved?
 			@board.render
+			print "Position: "
 			tile = @board.get_tile
+			print "Number: "
 			num = get_val
 			@board.update_position(tile, num)
 		end
+		@board.render
+		puts "You win!"
 	end
 
 	def get_val
@@ -19,5 +23,5 @@ class Game
 	end
 end
 
-game = Game.new("puzzles/sudoku1.txt")
+game = Game.new("puzzles/sudoku1_almost.txt")
 game.play

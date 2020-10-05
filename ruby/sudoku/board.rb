@@ -1,3 +1,4 @@
+require "set"
 require_relative "tile"
 
 class Board
@@ -8,14 +9,17 @@ class Board
 		end
 	end
 
+	attr_reader :grid
+
 	def initialize(filename)
 		@grid = Board.from_file(filename)
 	end
 
 	def render
 		system("clear")
-		output = ""
-		@grid.each do |row|
+		output = "    0 1 2 3 4 5 6 7 8\n"
+		output += "  -------------------\n"
+		@grid.each_with_index do |row, i|
 			line = row.map do |tile|
 				if tile.given && tile != "0"
 					tile.unchangeable
@@ -25,9 +29,9 @@ class Board
 					tile.blank
 				end
 			end
-			output += line.join(" ") + "\n"
+			output += i.to_s + " | " + line.join(" ") + "\n"
 		end
-		print output
+		print output + "\n"
 	end
 
 	def get_tile
@@ -44,6 +48,14 @@ class Board
 	end
 
 	def solved?
-		false
+		rows_solved = @grid.all? { |row| uniq_tiles?(row) }
+		cols_solved = @grid.transpose.all? { |col| uniq_tiles?(col) }
+		rows_solved && cols_solved
+	end
+
+	def uniq_tiles?(row)
+		nums = row.map { |tile| tile.to_s }
+		nums.select! { |num| num != "0" }
+		nums.uniq.length == 9
 	end
 end
