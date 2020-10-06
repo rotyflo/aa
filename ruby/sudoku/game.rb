@@ -10,7 +10,7 @@ class Game
 			@board.render
 			tile = @board.select_tile
 			val = get_value
-			@board.update_tile(tile, val)
+			@board.update_tile(tile, val) unless tile == nil || val == nil
 		end
 		@board.render
 		puts "You win!"
@@ -18,7 +18,13 @@ class Game
 
 	def get_value
 		print "Number: "
-		gets.chomp[0]
+		val = gets.chomp[0]
+		return val if is_valid?(val)
+		nil
+	end
+
+	def is_valid?(val)
+		"0123456789".include?(val)
 	end
 end
 

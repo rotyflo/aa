@@ -27,11 +27,16 @@ class Board
 		print "Position: "
 		pos = gets.chomp.split("")[0..1].map(&:to_i)
 		y, x = pos
-		@grid[x][y]
+		return @grid[x][y] if is_valid?(x, y)
+		nil
+	end
+
+	def is_valid?(x, y)
+		(0..8).include?(x) && (0..8).include?(y)
 	end
 
 	def update_tile(tile, str)
-		tile.value = str unless tile.given
+		tile.value = str unless tile.given || str == nil
 	end
 
 	def solved?
