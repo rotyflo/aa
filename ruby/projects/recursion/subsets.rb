@@ -28,5 +28,10 @@ p [1, 2].subsets
 # [1].subsets + [1].subsets.map { |[1]| [1] + [2] } # mapped [1, 2]
 # [1].subsets + [[2], [1, 2]]
 # => [[], [1], [2], [1, 2]]
-p [1, 2, 3].subsets # [1, 2].subsets + [[3], [1, 3], [2, 3], [1, 2, 3]]
+p [1, 2, 3].subsets
+# [1, 2].subsets + [1, 2].subsets.map { |[]| [] + [3] } # mapped [3]
+# [1, 2].subsets + [1, 2].subsets.map { |[1]| [1] + [3] } # mapped [1, 3]
+# [1, 2].subsets + [1, 2].subsets.map { |[2]| [2] + [3] } # mapped [2, 3]
+# [1, 2].subsets + [1, 2].subsets.map { |[1, 2]| [1, 2] + [3] } # mapped [1, 2, 3]
+# [1, 2].subsets + [[3], [1, 3], [2, 3], [1, 2, 3]]
 # => [[], [1], [2], [1, 2], [3], [1, 3], [2, 3], [1, 2, 3]]
