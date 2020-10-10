@@ -10,10 +10,7 @@ def merge_sort(arr)
 	left = arr.take(arr.length / 2)
 	right = arr.drop(arr.length / 2)
 
-	left = merge_sort(left)
-	right = merge_sort(right)
-
-	merge(left, right)
+	merge(merge_sort(left), merge_sort(right))
 end
 
 def merge(left, right)
