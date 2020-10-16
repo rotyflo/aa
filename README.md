@@ -30,7 +30,7 @@
 
 **Ruby**
 - [x] Enumerables and Debugging
-- [ ] Reference
+- [x] Reference
 - [ ] Recursion
 - [ ] Git
 - [ ] Data Structures
